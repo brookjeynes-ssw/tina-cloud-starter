@@ -7,16 +7,19 @@ import Page from "./collection/page";
 
 const config = defineConfig({
     tinaioConfig: {
-        // frontendUrlOverride: 'http://localhost:3002',
-        // identityApiUrlOverride: 'https://brookj-dev-identity.tinajs.dev',
-        // contentApiUrlOverride: 'https://brookj-dev-content.tinajs.dev',
-        frontendUrlOverride: 'https://app.tinajs.dev',
-        identityApiUrlOverride: 'https://identity.tinajs.dev',
-        contentApiUrlOverride: 'https://content.tinajs.dev',
-        assetsApiUrlOverride: 'https://assets-api.tinajs.dev'
+        frontendUrlOverride: 'http://localhost:3002',
+        identityApiUrlOverride: 'https://brookj-dev-identity.tinajs.dev',
+        contentApiUrlOverride: 'https://brookj-dev-content.tinajs.dev',
     },
+    // tinaioConfig: {
+    //     frontendUrlOverride: 'https://app.tinajs.dev',
+    //     identityApiUrlOverride: 'https://identity.tinajs.dev',
+    //     contentApiUrlOverride: 'https://content.tinajs.dev',
+    //     assetsApiUrlOverride: 'https://assets-api.tinajs.dev'
+    // },
     clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!,
     branch:
+        "main" ||
         process.env.NEXT_PUBLIC_TINA_BRANCH! || // custom branch env override
         process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF! || // Vercel branch env
         process.env.HEAD!, // Netlify branch env

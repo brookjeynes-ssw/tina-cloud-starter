@@ -19,11 +19,6 @@ const Global: Collection = {
         iconSchema as any,
         {
           type: "string",
-          label: "Title",
-          name: "title",
-        },
-        {
-          type: "string",
           label: "Name",
           name: "name",
         },
