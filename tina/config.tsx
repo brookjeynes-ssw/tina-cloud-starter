@@ -11,9 +11,9 @@ const config = defineConfig({
     frontendUrlOverride: 'http://localhost:3002',
     identityApiUrlOverride: 'https://brookj-dev-identity.tinajs.dev',
     contentApiUrlOverride: 'https://brookj-dev-content.tinajs.dev',
+    assetsApiUrlOverride: 'https://assets-api-local-brookj-dev.tinajs.dev'
 
     // // Include next line only if you set DEPLOY_ASSETS_API to true for your instance...
-    // assetsApiUrlOverride: 'https://assets-api-local-brookj-dev.tinajs.dev'
     // frontendUrlOverride: 'https://app.tinajs.dev',
     // identityApiUrlOverride: 'https://identity.tinajs.dev',
     // contentApiUrlOverride: 'https://content.tinajs.dev',
