@@ -1,5 +1,5 @@
 ---
-name: Llamantha
+name: Llamanth
 avatar: /uploads/authors/llamantha.png
 ---
 
